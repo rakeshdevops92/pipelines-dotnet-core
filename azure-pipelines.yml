@@ -23,7 +23,7 @@ steps:
     arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
     zipAfterPublish: True
 - powershell: |  
-  Write-Host "##vso[build.addbuildtag]SampleDotNet_521"
+   Write-Host "##vso[build.addbuildtag]pipelines-dotnet-core"
   displayName: 'PowerShell Script' 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact'
